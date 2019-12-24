@@ -1,0 +1,24 @@
+<coboqo>
+    <description>
+        coboqo search engine. 
+    </description>
+    <global>
+        <gParams name = "process">coboqo</gParams>
+        <!-- Data base configuration -->
+        <database>
+            <db_type>oracle</db_type><!--this is conf of db, you should type: oracle, mysql, etc...-->
+            <db_name>ora10g</db_name>
+            <db_host>127.0.0.1</db_host><!--ip addr of db-->
+            <db_user>coboqo</db_user>
+            <db_password>coboqo</db_password>
+            <db_retry>3</db_retry>
+            <db_sleep>10</db_sleep>
+        </database>
+        <logger>
+            <log_level>INFO</log_level>
+            <log_retention>5</log_retention>
+            <log_conf>C:/Documents and Settings/zhaomf/Desktop/Coboqo/conf/log4perl.conf</log_conf>
+            <log_class>coboqo</log_class>
+        </logger>
+    </global>
+</coboqo>
